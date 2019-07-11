@@ -53,10 +53,10 @@ public class FilmController {
 		return updateFilm;
 	}
 	
-	@DeleteMapping(value = "/deleteByFilmId/{Id}")
-	public void deleteFilmById (@PathVariable int Id) {
+	@DeleteMapping(value = "/deleteByFilmId/{filmId}")
+	public void deleteFilmById (@PathVariable int filmId) {
 		
-		filmDAO.deleteByFilmId(Id);
+		filmDAO.deleteByFilmId(filmId);
 	}
 	
 	/*

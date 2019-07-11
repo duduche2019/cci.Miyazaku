@@ -8,5 +8,7 @@ import com.Miyazaki.demo.model.Hero;
 @Repository
 public interface HeroDAO extends JpaRepository<Hero, Integer> {
 
+	void deleteByHeroId(int heroId);
+
 		
 }
